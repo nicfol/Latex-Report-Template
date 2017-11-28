@@ -1,0 +1,53 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+
+\title{TITLE}
+\author{AUTHOR \\ EMAIL}
+\date{DATE}
+
+% Use wide margins, but not quite so wide as fullpage.sty
+\marginparwidth 0.5in 
+\oddsidemargin 0.25in 
+\evensidemargin 0.25in 
+\marginparsep 0.25in
+\topmargin 0.25in 
+\textwidth 6in \textheight 8in
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\today}
+\lhead{NAME - STUDENT NO.}
+\cfoot{\thepage}
+
+\usepackage[numbers]{natbib}
+\bibliographystyle{IEEEtranN}
+
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+
+\usepackage[onehalfspacing]{setspace}
+\setlength{\headheight}{15pt}
+
+\usepackage{graphicx}
+\usepackage[justification=centering]{caption}
+
+\newenvironment{conditions}
+  {\par\vspace{\abovedisplayshortskip}\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{\belowdisplayskip}}
+
+\usepackage{float}
+
+\usepackage[none]{hyphenat}
+
+\usepackage{multirow}
+\usepackage{array}
+\begin{document}
+
+\maketitle
+
+\onehalfspacing
+
+\newpage
+\bibliography{bibliography}
+\end{document}
